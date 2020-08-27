@@ -1,0 +1,1 @@
+crt.Screen.Send("show ip int brief"+ "\r") 
