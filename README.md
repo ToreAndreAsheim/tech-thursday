@@ -46,6 +46,17 @@ Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern p
 26.11.2020  
 10.12.2020  
   
+## Atea Enterprise GitHub vs Privat GitHub?  
+  
+GitHub privat er gratis    
+* Du kan registrere konto og bruke personlig konto gratis  
+* Dette repo'et er åpent for alle å se, du trenger ikke Atea Enterprise Git, for å få tilgang til dette repo'et  
+
+Atea har Enterprise avtale med GitHub, og vi har per nå 100 lisenser  
+* Vi øker lisenser ved behov  
+* Kost legges til hver enkelt avdeling  
+* Behov/godkjenning må avklares med nærmeste leder  
+* Per i dag er det ca 2000kr i året per lisens  
   
 ## Notater
   
