@@ -37,5 +37,5 @@ Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern p
   
   
   
-(1) Med innlogget GitHub-bruker (din personlige bruker)
-(2) For å knytte din personlige bruker til Atea's Enterprise GitHub, gå hit: https://github.com/ateanorge/join
+(1) Med innlogget GitHub-bruker (din personlige bruker)  
+(2) For å knytte din personlige bruker til Atea's Enterprise GitHub, gå hit: https://github.com/ateanorge/join  
