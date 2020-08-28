@@ -35,7 +35,19 @@ Per i dag er det en liten gjeng i konsulent Øst som har satt dette igang, men -
   
 Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern part du mener har noe bra å si.  
   
+## Datoer 2020
+
+03.09.2020  
+17.09.2020  
+01.10.2020  
+15.10.2020  
+29.10.2020  
+12.11.2020  
+26.11.2020  
+10.12.2020  
   
+  
+## Notater
   
 (1) Med innlogget GitHub-bruker (din personlige bruker)  
 (2) For å knytte din personlige bruker til Atea's Enterprise GitHub, gå hit: https://github.com/ateanorge/join  
