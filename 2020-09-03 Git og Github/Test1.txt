@@ -1,1 +1,3 @@
 Dette er test 1
+
+Dette er test 2
