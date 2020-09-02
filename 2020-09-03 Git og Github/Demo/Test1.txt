@@ -1,1 +1,6 @@
 Dette er test1
+
+
+
+Test er en vellykket!!
+
