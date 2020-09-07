@@ -41,7 +41,7 @@ Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern p
 [03.09.2020 - Git and GitHub - Magnus Haugen](https://github.com/ateanorge/TechThursday/tree/master/2020-09-03%20Git%20og%20Github)  
 17.09.2020 - Ansible for nettverksautomasjon - Del 1/2 - Erik Ingeberg  
 01.10.2020 - Ansible for nettverksautomasjon - Del 2/2 - Erik Ingeberg  
-15.10.2020  
+15.10.2020 - Splunk  
 29.10.2020  
 12.11.2020  
 26.11.2020  
