@@ -1,0 +1,13 @@
+---
+- name: Configure logging
+  hosts: nxos
+  gather_facts: False
+  tasks:
+
+    - name: Configure syslog
+      nxos_config:
+        lines:
+          - logging server 10.203.12.101 6 port 11001 use-vrf management
+          - logging origin-id hostname
+        save_when: changed
+

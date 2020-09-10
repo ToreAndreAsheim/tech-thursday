@@ -1,0 +1,40 @@
+---
+- name: Configure logging
+  hosts: nxos
+  gather_facts: False
+  tasks:
+
+    - name: Check for IP on int mgmt0
+      nxos_command:
+        commands: "sh run int mgmt0 | i ip"
+      register: vrf_management
+
+    - name: Add use-vrf managment if needed
+      set_fact:
+        logg_config: "{{ logg_config_vrf }}"
+      when: "'ip' in vrf_management.stdout[0]"
+
+    - name: Configure syslog
+      nxos_config:
+        lines: "{{ logg_config }}"
+        save_when: changed
+
+    - name: Get current syslog config
+      nxos_command:
+        commands: "show run | i ^logging"
+      register: output
+
+    - name: Find extra unneded lines
+      set_fact:
+        extra_logging: "{{ output.stdout_lines[0] | difference(logg_config) }}"
+
+    - name: "Construct the 'no logging...' command to remove unneeded lines"
+      set_fact:
+        no_logging: "{{ lookup('template', './TEMPLATES/no_logging.j2') | from_yaml }}"
+      when: "extra_logging != []"
+
+    - name: Remove unneeded log confiuration
+      nxos_config:
+        lines: "{{ no_logging }}"
+        save_when: changed
+      when: "extra_logging != []"

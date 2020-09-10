@@ -1,0 +1,26 @@
+[local]
+localhost	ansible_connection=local
+
+[site_a]
+nxos1           ansible_host=10.203.12.201
+nxos2           ansible_host=10.203.12.202
+
+[site_b]
+nxos3           ansible_host=10.203.12.203
+nxos4           ansible_host=10.203.12.204
+
+[site_c]
+nxos5           ansible_host=10.203.12.205
+
+[nxos:vars]
+ansible_network_os=nxos
+ansible_connection=httpapi
+ansible_httpapi_use_ssl=yes
+ansible_httpapi_validate_certs=no
+ansible_user=admin
+ansible_password=Atealab123
+
+[nxos:children]
+site_a
+site_b
+site_c

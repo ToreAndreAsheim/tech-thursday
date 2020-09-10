@@ -1,0 +1,10 @@
+---
+# NXOS fact gathering example
+
+- name: Gather legacy and resource facts
+  hosts: nxos
+  gather_facts: no
+  tasks:
+    - nxos_facts:
+        gather_subset: all
+        gather_network_resources: all

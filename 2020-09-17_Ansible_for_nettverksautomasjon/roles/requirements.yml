@@ -1,0 +1,8 @@
+---
+- name: geerlingguy.repo-epel
+- name: geerlingguy.git
+- name: geerlingguy.ansible
+- name: geerlingguy.docker
+- name: geerlingguy.pip
+- name: geerlingguy.nodejs
+- name: geerlingguy.awx

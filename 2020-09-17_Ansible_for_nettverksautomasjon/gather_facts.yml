@@ -1,0 +1,11 @@
+---
+# NXOS fact gathering example
+
+- name: Gather facts and print results
+  hosts: nxos
+  gather_facts: yes
+  tasks:
+    - name: Print NXOS facts
+      debug:
+        var: ansible_facts
+

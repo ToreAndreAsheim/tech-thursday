@@ -1,0 +1,11 @@
+---
+- name: Configure logging
+  hosts: nxos
+  gather_facts: False
+
+  tasks:
+    - name: Configure syslog
+      nxos_config:
+        lines: "{{ logg_config_vrf }}"
+        save_when: changed
+

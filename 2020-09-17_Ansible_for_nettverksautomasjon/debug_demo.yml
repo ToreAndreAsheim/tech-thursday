@@ -1,0 +1,16 @@
+---
+- name: Debug demo playbook
+  hosts: nxos
+  gather_facts: no
+  tasks:
+    - name: Simple string print
+      debug:
+        msg: Hello world!
+
+    - name: Print ansible_host variable
+      debug:
+        var: ansible_host
+
+    - name: Print inventory_hostname variable
+      debug:
+        var: inventory_hostname

@@ -1,0 +1,7 @@
+---
+nokkel1: verdi1
+abc:
+  neste_dict:
+    - a
+    - b
+    - c

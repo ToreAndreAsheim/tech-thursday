@@ -1,0 +1,7 @@
+---
+- name: Ping test for NXOS switches
+  hosts: nxos
+  gather_facts: no
+  tasks:
+    - name: Ping test
+      ping:

@@ -1,0 +1,18 @@
+- hosts: localhost
+  become: true
+
+  vars:
+    nodejs_version: "10.x"
+    pip_install_packages:
+      - name: docker
+      - name: docker-compose
+      - name: selinux
+
+  roles:
+    - geerlingguy.repo-epel
+    - geerlingguy.git
+    - geerlingguy.ansible
+    - geerlingguy.docker
+    - geerlingguy.pip
+    - geerlingguy.nodejs
+    - geerlingguy.awx

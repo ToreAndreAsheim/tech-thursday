@@ -1,0 +1,9 @@
+---
+{% for snmp_entry in snmp_networks %}
+{% set acl_entry = loop.index %}
+{% if snmp_entry | regex_search('^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$') %}
+  - {{acl_entry}}0 permit ip {{snmp_entry}}/32 any
+{% else %}
+  - {{acl_entry}}0 permit ip {{snmp_entry}} any
+{% endif %}
+{% endfor %}

@@ -1,0 +1,7 @@
+---
+- name: Rollback NXOS switches to default configuration
+  hosts: nxos
+  tasks:
+    - name: Rollback
+      nxos_command:
+        commands: rollback running-config checkpoint default

@@ -1,0 +1,27 @@
+---
+- name: Configure SNMP on NX-OS switches
+  hosts: nxos
+  gather_facts: False
+  tasks:
+
+    - name: Generate SNMP-ACL NX-OS
+      set_fact:
+        snmp_acl_nxos: "{{ lookup('template', './TEMPLATES/snmp_acl_nxos.j2') | from_yaml }}"
+
+    - name: Configure SNMP-ACL NX-OS
+      nxos_config:
+        parents: "ip access-list SNMP-ACL"
+        lines: "{{ snmp_acl_nxos }}"
+        match: exact
+        replace: block
+        before: "no ip access-list SNMP-ACL"
+        save_when: changed
+
+    - name: Configure SNMP NX-OS
+      nxos_config:
+        lines:
+          - "snmp-server contact admin@admin.com"
+          - "snmp-server location {{ snmp_location }}"
+          - "snmp-server community notpublic group network-operator"
+          - "snmp-server community notpublic use-ipv4acl SNMP-ACL"
+        save_when: changed

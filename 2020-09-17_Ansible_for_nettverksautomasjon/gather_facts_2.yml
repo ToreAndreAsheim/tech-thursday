@@ -1,0 +1,22 @@
+---
+# NXOS fact gathering example
+
+- name: Gather facts and print results
+  hosts: nxos
+  gather_facts: yes
+  tasks:
+    - name: Print net_platform
+      debug:
+        var: ansible_facts.net_platform
+
+    - name: Print net_version
+      debug:
+        var: ansible_facts.net_version
+
+    - name: Print interface list
+      debug:
+        var: ansible_facts.net_interfaces_list
+
+    - name: Print 3rd interface in list
+      debug:
+        var: ansible_facts.net_interfaces_list[2]

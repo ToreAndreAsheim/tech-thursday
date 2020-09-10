@@ -1,0 +1,13 @@
+---
+- name: Playbook that enables NXAPI on NXOS switches
+  hosts: nxos
+  gather_facts: no
+  tasks:
+    - name: Enable NXAPI with https
+      nxos_nxapi:
+        enable_http: false
+        https: yes
+        ssl_strong_ciphers: yes
+        tlsv1_0: no
+        tlsv1_2: yes
+        state: present

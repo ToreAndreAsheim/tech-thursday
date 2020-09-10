@@ -1,0 +1,21 @@
+---
+- name: Configure logging
+  hosts: nxos
+  gather_facts: False
+  tasks:
+
+    - name: Check for IP on int mgmt0
+      nxos_command:
+        commands: "sh run int mgmt0 | i ip"
+      register: vrf_management
+
+    - name: Add use-vrf managment if needed
+      set_fact:
+        logg_config: "{{ logg_config_vrf }}"
+      when: "'ip' in vrf_management.stdout[0]"
+
+    - name: Configure syslog
+      nxos_config:
+        lines: "{{ logg_config }}"
+        save_when: changed
+

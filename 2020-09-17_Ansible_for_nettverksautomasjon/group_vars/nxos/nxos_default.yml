@@ -1,0 +1,15 @@
+---
+ansible_network_os: nxos
+ansible_connection: network_cli
+
+logg_config:
+  - logging server {{ syslog_server }} 6 port 11001
+  - logging origin-id hostname
+
+logg_config_vrf:
+  - logging server {{ syslog_server }} 6 port 11001 use-vrf management
+  - logging origin-id hostname
+
+timezone:
+  - clock timezone CET 1 0
+  - clock summer-time CEST 5 Sun Mar 02:00 5 Sun Oct 03:00 60

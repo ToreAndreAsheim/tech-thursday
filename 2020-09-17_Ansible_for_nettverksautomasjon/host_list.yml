@@ -1,0 +1,9 @@
+---
+# Example of the debug module to print out the {{ ansible_host }} variable
+
+- name: Show hosts in nxos group
+  hosts: nxos
+  gather_facts: no
+  tasks:
+    - debug:
+        msg: "{{ ansible_host }}"
