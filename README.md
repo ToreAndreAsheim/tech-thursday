@@ -39,7 +39,7 @@ Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern p
 
 [20.08.2020 - Automation with Python and SecureCRT - Magnus Haugen](https://github.com/ateanorge/TechThursday/tree/master/2020-08-20%20Automation%20with%20python%20and%20secureCRT)  
 [03.09.2020 - Git and GitHub - Magnus Haugen](https://github.com/ateanorge/TechThursday/tree/master/2020-09-03%20Git%20og%20Github)  
-17.09.2020 - Ansible for nettverksautomasjon - Del 1/2 - Erik Ingeberg  
+[17.09.2020 - Ansible for nettverksautomasjon - Del 1/2 - Erik Ingeberg](https://github.com/ateanorge/TechThursday/tree/master/2020-09-17_Ansible_for_nettverksautomasjon)  
 01.10.2020 - Ansible for nettverksautomasjon - Del 2/2 - Erik Ingeberg  
 15.10.2020 - Splunk  
 29.10.2020  
