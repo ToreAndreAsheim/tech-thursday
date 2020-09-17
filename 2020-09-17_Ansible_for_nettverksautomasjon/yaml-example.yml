@@ -1,7 +1,10 @@
 ---
-nokkel1: verdi1
-abc:
-  neste_dict:
-    - a
-    - b
-    - c
+key1: value1
+key2: value2
+key3:
+  - 1
+  - 2
+  - 3
+  - new_dict:
+      - new_list_element1
+      - new_list_element2
