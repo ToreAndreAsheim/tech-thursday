@@ -2,9 +2,6 @@
 key1: value1
 key2: value2
 key3:
-  - 1
-  - 2
-  - 3
-  - new_dict:
-      - new_list_element1
-      - new_list_element2
+  nested_dict:
+    - 10
+    - True
