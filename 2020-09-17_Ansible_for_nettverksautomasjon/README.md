@@ -18,7 +18,7 @@ Tema i dag er Ansible for nettverksautomasjon.
 
 Presentasjon og demo av Ansible. Målet er å vise hvordan Ansible kan brukes til automasjon av nettverksenheter.
 
-Link til [survy](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=ZxD1ZWV9qUq5lkzEOg1xERc4OOGptWRFucuxYHXBlyxUNFNHMjZFR0hDSkVOWldNN0NJWjZSSVFQTy4u)
+Link til [survy](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=ZxD1ZWV9qUq5lkzEOg1xERc4OOGptWRFucuxYHXBlyxUNk5VTk9LRU5RMjk0RVdCVFpDRzlIQ1o4Mi4u)
 
 Link til survey [resultat](https://images.squarespace-cdn.com/content/v1/5ace22a79d5abb8e9b89e7b3/1536881081852-O23NUOGLRP9O5GN8O8RH/ke17ZwdGBToddI8pDm48kMh3mVmBaCAeGwqCLG3iONRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIBW4H-Ca6AoigG7Ta8YXcF_lHpbhrmZNZWbxxrH_bJLk/sticker-10-anim+copy.gif)
 
