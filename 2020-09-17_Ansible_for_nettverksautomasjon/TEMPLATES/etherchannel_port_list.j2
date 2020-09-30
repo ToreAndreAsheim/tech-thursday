@@ -1,0 +1,12 @@
+---
+{% for port in port_list %}
+{% if port in etherchannel_members|string() %}
+{% for port_channel, members in etherchannel_members.items() %}
+{% if port in members %}
+- {{ port_channel|lower }}
+{% endif %}
+{% endfor %}
+{% else %}
+- {{ port }}
+{% endif %}
+{% endfor %}

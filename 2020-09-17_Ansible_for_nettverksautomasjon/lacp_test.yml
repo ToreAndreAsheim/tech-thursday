@@ -1,0 +1,15 @@
+---
+- name: Configure links between NXOS1 and NXOS2
+  hosts: nxos1:nxos2 
+  gather_facts: True
+  tasks:
+
+    - name: Replace device configuration of specified LAG attributes of given interfaces with provided configuration.
+      cisco.nxos.nxos_lag_interfaces:
+        config:
+        - name: port-channel10
+          members:
+          - member: Ethernet1/4
+            mode: active
+        state: replaced
+

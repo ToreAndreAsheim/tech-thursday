@@ -1,6 +1,7 @@
 ---
 - name: Rollback NXOS switches to default configuration
   hosts: nxos
+  gather_facts: False
   tasks:
     - name: Rollback
       nxos_command:

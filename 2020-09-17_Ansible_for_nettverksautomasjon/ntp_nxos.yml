@@ -26,14 +26,11 @@
     - name: Get current NTP servers
       nxos_command:
         commands: "show run | inc 'ntp server'"
-      register: output
-
-    - set_fact:
-        current_ntp: "{{ output.stdout_lines[0] }}"
+      register: current_ntp
 
     - name: Find extra NTP servers that should not be configured
       set_fact:
-        extra_ntp_servers: "{{ current_ntp | difference(ntp_servers_config) | list }}"
+        extra_ntp_servers: "{{ current_ntp.stdout_lines[0] | difference(ntp_servers_config) | list }}"
 
     - name: "Construct the 'no ntp...' command to remove unneeded servers"
       set_fact:

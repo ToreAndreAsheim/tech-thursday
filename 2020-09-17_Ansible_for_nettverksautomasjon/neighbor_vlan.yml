@@ -1,0 +1,62 @@
+---
+- name: Find neighbor switches and add vlan to trunk
+  hosts: nxos:!nxos5
+  gather_facts: false
+  tasks:
+
+  - name: configure new vlan
+    nxos_vlans:
+      config:
+        - vlan_id: 2
+          name: TEST-VLAN2
+
+  - name: Collect CDP neighbors
+    nxos_command:
+      commands: show cdp neighbors detail
+    register: cdp_neighbors
+
+  - name: Read in parse_genie role
+    include_role:
+      name: clay584.parse_genie
+
+  - name: Parse CDP with Genie Filter
+    set_fact:
+      cdp_nei_parsed: "{{ cdp_neighbors.stdout[0] | parse_genie(command='show cdp neighbors detail', os='nxos') }}"
+
+
+  - name: Build list of ports connecting to other swithces
+    set_fact:
+      port_list: "{{ (port_list|default([])) + [ item.value.local_interface ] }}"
+    loop: "{{ cdp_nei_parsed.index|default({})|dict2items }}"
+    when:
+      - '"Switch" in item.value.capabilities'
+      - '"mgmt0" not in item.value.local_interface'
+
+  - name: Check for etherchannels
+    nxos_command:
+      commands: show port-channel summary
+    register: etherchannel_summary
+
+  - block: #This block will only run if show port-channel summary output is not blank
+
+      - name: Parse Etherchannel with Genie Filter
+        set_fact:
+          etherchannel_parsed: "{{ etherchannel_summary.stdout[0] | parse_genie(command='show port-channel summary', os='nxos') }}"
+    
+      - name: Build etherchannel dictionary
+        set_fact:
+          etherchannel_members: "{{ etherchannel_members|default({}) | combine({item.key: item.value.members}) }}"
+        with_dict: "{{ etherchannel_parsed.interfaces }}"
+   
+      - name: Build new port_list
+        set_fact:
+          port_list: "{{ lookup('template', './TEMPLATES/etherchannel_port_list.j2') | from_yaml | unique }}"
+
+    when: etherchannel_summary.stdout[0] != ""
+
+  - name: Add new VLAN in allow list on ports connected to other switches
+    nxos_config:
+      lines: switchport trunk allowed vlan 1-2
+      parents: "interface {{ item }}"
+      save_when: modified
+    with_items: "{{ port_list }}"

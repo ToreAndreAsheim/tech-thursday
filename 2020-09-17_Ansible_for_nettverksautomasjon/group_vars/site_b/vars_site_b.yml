@@ -1,2 +1,6 @@
 ---
 snmp_location: SITE B, RACK 22, Trondheim
+
+#snmp_networks:
+#  - 10.203.204.22
+#  - 10.203.12.0 0.0.3.255
