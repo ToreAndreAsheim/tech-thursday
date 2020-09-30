@@ -1,0 +1,16 @@
+---
+{% for ntp_server in ntp_servers %}
+{% if loop.index == 1 %}
+{% if 'ip' in vrf_management.stdout[0] %}
+- ntp server {{ ntp_server }} prefer use-vrf management
+{% else %}
+- ntp server {{ ntp_server }} prefer use-vrf default
+{% endif %}
+{% else %}
+{% if 'ip' in vrf_management.stdout[0] %}
+- ntp server {{ ntp_server }} use-vrf management
+{% else %}
+- ntp server {{ ntp_server }} use-vrf default
+{% endif %}
+{% endif %}
+{% endfor %}

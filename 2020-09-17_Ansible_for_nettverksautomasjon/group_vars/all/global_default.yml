@@ -8,3 +8,4 @@ snmp_networks:
   - 10.203.204.0 0.0.0.255
 
 syslog_server: 10.203.12.101
+

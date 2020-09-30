@@ -1,0 +1,46 @@
+---
+- name: Set NTP servers and timezone
+  hosts: nxos
+  gather_facts: False
+  tasks:
+
+    - name: Set timezone
+      nxos_config:
+        lines: "{{ timezone }}"
+        save_when: changed
+
+    - name: Check for IP on int mgmt0
+      nxos_command:
+        commands: "sh run int mgmt0 | i ip"
+      register: vrf_management
+
+    - name: Construct NTP Server config
+      set_fact:
+        ntp_servers_config: "{{ lookup('template', './TEMPLATES/ntp_servers_nxos.j2') | from_yaml }}"
+
+    - name: Configure NTP Servers
+      nxos_config:
+        lines: "{{ ntp_servers_config }}"
+        save_when: changed
+
+    - name: Get current NTP servers
+      nxos_command:
+        commands: "show run | inc 'ntp server'"
+      register: output
+
+    - set_fact:
+        current_ntp: "{{ output.stdout_lines[0] }}"
+
+    - name: Find extra NTP servers that should not be configured
+      set_fact:
+        extra_ntp_servers: "{{ current_ntp | difference(ntp_servers_config) | list }}"
+
+    - name: "Construct the 'no ntp...' command to remove unneeded servers"
+      set_fact:
+        no_ntp_servers: "{{ lookup('template', './TEMPLATES/no_ntp_servers.j2') | from_yaml }}"
+
+    - name: Remove unneeded NTP servers
+      nxos_config:
+        lines: "{{ no_ntp_servers }}"
+        save_when: changed
+      when: no_ntp_servers is defined
