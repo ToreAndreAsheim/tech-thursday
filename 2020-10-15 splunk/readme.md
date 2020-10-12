@@ -1,4 +1,4 @@
-# Velkommen til den TechTorsdagen
+# Velkommen til TechTorsdagen
 
 Tema i dag er Splunk.
 
