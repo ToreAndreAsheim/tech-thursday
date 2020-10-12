@@ -3,7 +3,7 @@
 Tema i dag er Splunk.
 
 
-Link til [survy]()
+Link til [survy](https://forms.office.com/Pages/ResponsePage.aspx?id=ZxD1ZWV9qUq5lkzEOg1xERc4OOGptWRFucuxYHXBlyxUMkVSWEtNSlU5QlBZQjlKOEM3M0hXMkZCWi4u)
 
 
 Link til survey [resultat]()
