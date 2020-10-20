@@ -41,8 +41,8 @@ Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern p
 [03.09.2020 - Git and GitHub - Magnus Haugen](https://github.com/ateanorge/TechThursday/tree/master/2020-09-03%20Git%20og%20Github)  
 [17.09.2020 - Ansible for nettverksautomasjon - Del 1/2 - Erik Ingeberg](https://github.com/ateanorge/TechThursday/tree/master/2020-09-17_Ansible_for_nettverksautomasjon)  
 [01.10.2020 - Ansible for nettverksautomasjon - Del 2/2 - Erik Ingeberg](https://github.com/ateanorge/tech-thursday/blob/master/2020-09-17_Ansible_for_nettverksautomasjon/README.md#velkommen-til-den-fjerde-techtorsdagen)  
-15.10.2020 - Splunk  
-29.10.2020  
+[15.10.2020 - Splunk, from Rookies to Ninjas - John-Vidar Stene](https://github.com/ateanorge/tech-thursday/blob/master/2020-10-15%20splunk/readme.md#velkommen-til-techtorsdagen)
+[29.10.2020 - Ssh - Arne Opdal](https://github.com/ateanorge/tech-thursday/tree/master/2020-10-29%20ssh#velkommen-til-techtorsdagen)
 12.11.2020  
 26.11.2020  
 10.12.2020  
