@@ -44,7 +44,7 @@ Det kan være deg, en kollega du nominerer eller for den saks skyld en ekstern p
 [15.10.2020 - Splunk, from Rookies to Ninjas - John-Vidar Stene](https://github.com/ateanorge/tech-thursday/blob/master/2020-10-15%20splunk/readme.md#velkommen-til-techtorsdagen)  
 [29.10.2020 - Ssh - Arne Opdal](https://github.com/ateanorge/tech-thursday/tree/master/2020-10-29%20ssh#velkommen-til-techtorsdagen)  
 12.11.2020  
-[26.11.2020 - Cisco Collector - Mike Kemp](https://github.com/ateanorge/tech-thursday/tree/master/2020-11-26%20Cisco%20Collector#velkommen-til-techtorsdagen) 
+[26.11.2020 - Cisco Collector - Mike Kemp](https://github.com/ateanorge/tech-thursday/tree/master/2020-11-26%20Cisco%20Collector#velkommen-til-techtorsdagen)  
 10.12.2020  
   
 ## Atea Enterprise GitHub vs Privat GitHub?  
