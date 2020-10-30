@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Remove tree on Debian/Ubuntu
+    apt:
+       update_cache: yes
+       name: tree
+       state: absent

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Install aptitude on Debian/Ubuntu
+    apt:
+       update_cache: yes
+       name: aptitude
+       state: present

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Install tree on Debian/Ubuntu
+    ansible.builtin.apt:
+       update_cache: yes
+       name: tree
+       state: present

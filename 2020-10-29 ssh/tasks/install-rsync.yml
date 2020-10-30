@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Install rsync on Debian/Ubuntu
+    ansible.builtin.apt:
+       update_cache: yes
+       name: rsync
+       state: present

@@ -1,0 +1,19 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Add user on Debian/Ubuntu
+    user:
+       name: atea
+       shell: /bin/bash
+       groups: sudo
+       append: yes
+       password: xxxxxx
+       update_password: on_create
+       state: present
+  - name: Set authorized keys taken from url
+    ansible.posix.authorized_key:
+      user: atea
+      state: present
+      key: https://ao-test.net/keys/atea.keys
+

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Install mlocate on Debian/Ubuntu
+    ansible.builtin.apt:
+       update_cache: yes
+       name: mlocate
+       state: present

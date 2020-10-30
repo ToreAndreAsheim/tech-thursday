@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Remove user on Debian/Ubuntu
+    user:
+       name: atea
+       state: absent
+       remove: yes
