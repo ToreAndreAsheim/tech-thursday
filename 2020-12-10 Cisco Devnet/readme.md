@@ -18,9 +18,12 @@ Agenda
 
 	
 Hva er DevNet?
-	Hvor finner du ressurser?
-	Kompetanse og sertifiseringer
-	Praktiske eksempler og usecases
+
+Hvor finner du ressurser?
+
+Kompetanse og sertifiseringer
+
+Praktiske eksempler og usecases
 
 
  
