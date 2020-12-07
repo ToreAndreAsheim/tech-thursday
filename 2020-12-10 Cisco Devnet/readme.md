@@ -24,7 +24,7 @@ På slutten kommer vi til å vise fram enkle, men konkrete demoer som vi tror er
  
 
 
-Link til [survy]()
+Link til [survy](https://forms.office.com/Pages/ResponsePage.aspx?id=ZxD1ZWV9qUq5lkzEOg1xERc4OOGptWRFucuxYHXBlyxURDEzOERGTzMzUzY3QzNBNzBaN1hIT1FNQy4u)
 
 
 Link til survey [resultat]()
