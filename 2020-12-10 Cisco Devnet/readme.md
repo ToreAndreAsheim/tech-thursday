@@ -13,13 +13,12 @@ I første delen av dette webinaret får du lære om det. Du lærer om Cisco DevN
 
 På slutten kommer vi til å vise fram enkle, men konkrete demoer som vi tror er relevante. DevNet er relativt nytt for oss i Atea og Cisco også, men vi viser frem noen low hanging fruits og konkrete usecases som har vært til inspirasjon for oss til å se verdien. Håpet er at du skal bli inspirert til å automatisere og integrere noe som gir stor verdi for din organisasjon!!
 
-#Agenda
+## Agenda
 
-	
-### Hva er DevNet?
-### Hvor finner du ressurser? 
-### Kompetanse og sertifiseringer 
-### Praktiske eksempler og usecases 
+* Hva er DevNet?
+* Hvor finner du ressurser? 
+* Kompetanse og sertifiseringer 
+* Praktiske eksempler og usecases 
 
 
  
