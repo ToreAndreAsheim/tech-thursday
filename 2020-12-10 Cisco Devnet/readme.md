@@ -33,5 +33,5 @@ Link til survey [resultat]()
 Link til [webex](https://acecloud.webex.com/acecloud/onstage/g.php?MTID=e7015e33377ae99ec475d47ed8d91cd78)
 
 
-Alternetiv [link](https://globalpage-prod.webex.com/join)
+Alternetiv [link](https://globalpage-prod.webex.com/join)  
 Event number (access code): 162 703 8716 
