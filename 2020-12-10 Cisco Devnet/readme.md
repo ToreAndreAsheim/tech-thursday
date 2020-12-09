@@ -30,4 +30,8 @@ Link til [survy](https://forms.office.com/Pages/ResponsePage.aspx?id=ZxD1ZWV9qUq
 Link til survey [resultat]()
 
 
-Link til [video-recording]()
+Link til [webex](https://acecloud.webex.com/acecloud/onstage/g.php?MTID=e7015e33377ae99ec475d47ed8d91cd78)
+
+
+Alternetiv [link](https://globalpage-prod.webex.com/join)
+Event number (access code): 162 703 8716 
