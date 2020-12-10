@@ -34,6 +34,6 @@ Link til [webex](https://acecloud.webex.com/acecloud/onstage/g.php?MTID=e7015e33
 
 
 Alternetiv [link](https://acecloud.webex.com/acecloud/onstage/g.php?MTID=eaf3996b1742bd588c82873b94dba39a1)  
-Event number (access code): 162 703 8716 
-Event password: yjMT6kM4JS3 (95686564 from phones) 
+Event number (access code): 162 703 8716  
+Event password: yjMT6kM4JS3 (95686564 from phones)  
  
